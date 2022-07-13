@@ -8,7 +8,8 @@
 - 데이터 베이스: 수집된 데이터를 효율적으로 관리  
 ### 1.2 정보 시스템과 데이터베이스  
 * **정보 시스템(information System)**: 조직에 필요한 데이터를 수집/저장해 두었다가 의사 결정에 필요한 정보를 만드는 수단  
-(그림 1-3)  
+![1-3](https://user-images.githubusercontent.com/104348646/178721798-7c384f41-ee0c-4879-9d08-6c215d0d842a.jpg)
+
 - ex) 경영정보시스템(MIS=Management Information System), 의사 결정 지원 시스템(=DSS=Decision Support System), 프로젝트 관리 시스템(PMS=Project Management System)  
 
 ## 2. 데이터베이스의 정의와 특성  
