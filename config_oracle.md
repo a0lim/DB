@@ -17,3 +17,7 @@
 - ID: a0lim  
   
 - 참고: https://mydatanote.tistory.com/5
+
+
+* 설치 확인
+- 참고: https://codedragon.tistory.com/1366
