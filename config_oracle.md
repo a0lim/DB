@@ -1,3 +1,4 @@
+# INSTALLATION
 ## Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
 - Version 21.3.0.0.0  
 
@@ -21,3 +22,21 @@
 
 * 설치 확인
 - 참고: https://codedragon.tistory.com/1366
+
+
+# CONFIG
+## 행번호 표시
+1. Oracle SQL Developer
+2. 도구 -> 환경설정
+3. 코드 편집기 -> 행 여백
+4. 행 번호 표시 클릭
+
+- 참고: https://wickedmagic.tistory.com/231
+
+## 테이블 필터링
+1. Oracle SQL Developer
+2. 접속 -> Database name -> 테이블(필터링됨) -> 오른쪽 클릭 -> 필터 적용
+3. 필터 조건 입력
+- 현재 조건: Created Date >= 2022-07-29
+
+
