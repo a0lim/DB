@@ -39,4 +39,6 @@
 3. 필터 조건 입력
 - 현재 조건: Created Date >= 2022-07-29
 
-
+## 테이블
+* CUSTOMER, ORDER_LIST, PRODUCT 테이블 생성
+- 데이터 입력 시 임포트 생성(C:\Users\aylim\AppData\local\Temp)
