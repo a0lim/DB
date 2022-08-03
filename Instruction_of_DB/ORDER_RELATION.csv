@@ -1,0 +1,11 @@
+NUM,ORDER_CUSTOMER,ORDER_PRODUCT,CNT,ADDRESS,ORDER_DATE
+o01,apple,p03,10,seoul_mapo,2013-01-01
+o02,melon,p01,5,incheon,2013-01-10
+o03,banana,p06,45,kunggido_bucheon,2013-01-11
+o04,carrot,p02,8,busan,2013-02-01
+o05,melon,p06,36,kunggido_youngin,2013-02-20
+o06,banana,p01,19,north_chungcheong,2013-03-02
+o07,apple,p03,55,seol_yeong,2013-03-15
+o08,pear,p02,50,kangwon,2013-04-10
+o09,banana,p04,15,south_jeonra,2013-04-11
+o10,carrot,p03,20,kunggido_anyang,2013-05-22

@@ -1,0 +1,8 @@
+ID,CUSTOMER_NAME,AGE,GRADE,JOB,POINT
+apple,jeong,20,gold,student,1000
+banana,kim,25,vip,nurse,2500
+carrot,go,28,gold,teacher,4500
+orange,yong,22,silver,student,0
+melon,seong,35,gold,employee,5000
+peach,oh,NULL,silver,doctor,300
+pear,chae,31,silver,employee,500
