@@ -1,5 +1,80 @@
+## BASIC
+
+* WHERE  
+  - BETWEEN A AND B: A 이상, B 이하인 데이터
+  - IN: LIST 형태로 조회
+    + EX) SELECT * FROM TABLE A WHERE COLUMN1 IN (1,2,3); // COLUMN1이 1 OR 2 OR 3인 데이터
+
+
 * 참고
   - 기본 문법: https://smartseoullife.tistory.com/47
   - INSERT ALL : https://blog.naver.com/PostView.naver?blogId=regenesis90&logNo=222198156918&categoryNo=0&parentCategoryNo=0 
   - date 형: https://gent.tistory.com/448
-* rownum
+
+## GROUP BY
+* 조건 -> GROUP BY: 조건에 맞는 데이터끼리 GROUP BY
+```
+SELECT COUNT(*)
+FROM TABLEA
+WHERE COLUMN1 >= 10
+GROUP BY COLUMN1
+```
+
+* GROUP BY -> 조건: GROUP BY한 후, 조건에 맞는 결과값만 선택
+```
+SELECT COUNT(*)
+FROM TABLEA
+GROUP BY COLUMN1
+HAVIING COLUMN1 >= 10
+```
+
+## JOIN
+* 종류: inner join, left outer join, right outer join, full outer join
+```
+// 기본형: inner join
+
+1. 
+SELECT *
+FROM TABLEA, TABLEB
+WHERE TABLEA.COLUMN1 = TABLEB.COLUMN1,
+AND
+... ;
+
+2.
+SELECT COLUMN1
+FROM TABLEA,
+INNER JOIN TABLEB
+ON TABLEA.COLUMN1 = TABLEB.COLUMN1
+```
+
+* JOIN & GROUP BY
+```
+SELECT TABLEA.COLUMN2, SUM(TABLEA.COLUMN1 + TABLEB.COLUMN1)
+FROM TABLEA
+INNER JOIN TALBEB
+ON TABLEA.COLUMN1 = TABLEB.COLUMN1
+GROUP BY A.COLUMN2
+```
+
+## ROWNUM
+* 순서: 조회된 순서대로
+```
+SELECCT ROWNUM, *
+FROM TABLEA
+```
+
+* 순서: ORDER BY
+```
+SELECT ROW_NUMBER() OVER(ORDER BY COLUMN1, COLUMN2) AS ROWNUM, TABLEA.*
+FROM TABLEA
+ORDER BY COLUMN1, COLUMN2
+```
+
+* 순서: 그룹별(PARTITION)  
+  - PARTITION마다 각자의 순번 부여  
+  - EX) PARTITION 1: 1, 2, 3, ... / PARTITION 2: 1, 2
+```
+SELECT ROW_NUMBER() OVER(PARTITION BY TABLEA.COLUMN1 ORDER BY COLUMN1, COLUMN2) AS ROWnUM, TABLEA.*
+FORM TABLE A
+ORDER BY COLUMN1, COLUMN2
+```
